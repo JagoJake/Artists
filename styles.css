@@ -1,0 +1,89 @@
+body {
+  background-image: url(img/artist-background.jpg);
+  font-family: "Roboto";
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 25px;
+  grid-column-gap: 2%;
+  padding: 10px;
+  
+}
+.grid-container > div {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  padding: 10px 0;
+}
+img{
+  width: 100%;
+  height: 50%;
+  box-shadow: 5px 8px 5px #b6b4b4;
+}
+img:hover {
+  opacity: 0.8;
+}
+
+h1{
+  font-size: 49px;
+  background-color: rgba(255, 87, 51);
+  text-align:center;
+  margin-top: -10px;
+  padding-bottom: 5px;
+}
+
+h2{
+  font-size: 14px;
+  background-color: rgba(255, 87, 51);
+  text-align:center;
+  padding: 10px 0px;
+  margin-top: -5px;
+  margin-bottom: 5px;
+  border-style: solid;
+  border-color: rgba(72, 7, 88, 0.6);
+  color: white;
+  font-size: 20px;
+}
+
+.title {
+  font-size: 20px;
+  background-color: rgba(255, 87, 51);
+  text-align:center;
+  color: white;
+}
+.title-para {
+  margin-top: -20px;
+  padding-bottom: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 25px;
+}
+
+
+@media (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 875px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.margin-para {
+  margin-bottom: -30px;
+}
